@@ -44,7 +44,7 @@ class ViewController: UIViewController {
             // """, preferredStyle: UIAlertController.Style.alert)
         
         let action = UIAlertAction(title: "Aceptar", style: .default) { (action) in
-            print("He pulsado el botón aceptar")
+            print("He pulsado el botón de aceptar")
         }
         
         controller.addAction(action)
