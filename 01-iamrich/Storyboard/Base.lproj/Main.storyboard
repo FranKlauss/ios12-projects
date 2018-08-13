@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,60 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_iamrich" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rubyimagen" translatesAutoresizingMaskIntoConstraints="NO" id="g0U-6n-mOE">
+                                <rect key="frame" x="87.666666666666686" y="321" width="200" height="170"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am rich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfv-rl-TvR">
+                                <rect key="frame" x="0.0" y="177.33333333333337" width="375" height="139.66666666666663"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="41"/>
+                                <color key="textColor" red="0.82745098039215681" green="0.13725490196078433" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SId-j7-qmF">
+                                <rect key="frame" x="128.66666666666666" y="591" width="118" height="44"/>
+                                <color key="backgroundColor" red="0.43063952789051285" green="0.15726079980361654" blue="0.54616116751269028" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="27"/>
+                                <color key="tintColor" red="1" green="0.36912313920000001" blue="0.62973146390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="PÚLSAME">
+                                    <color key="titleColor" red="0.82745098039215681" green="0.13725490196078433" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5490196078431373" green="0.082352941176470587" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8U5-MP-hiL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27405897053415634" green="0.1000807638599185" blue="0.34757693527918787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SId-j7-qmF" firstAttribute="top" secondItem="g0U-6n-mOE" secondAttribute="bottom" constant="100" id="3sP-Tu-s4C"/>
+                            <constraint firstItem="g0U-6n-mOE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5oG-lq-bNq"/>
+                            <constraint firstItem="g0U-6n-mOE" firstAttribute="top" secondItem="Kfv-rl-TvR" secondAttribute="bottom" constant="4" id="JUk-qj-qqj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kfv-rl-TvR" secondAttribute="trailing" id="OVP-rQ-Ogm"/>
+                            <constraint firstItem="Kfv-rl-TvR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P10-xz-KJq"/>
+                            <constraint firstItem="SId-j7-qmF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P5z-By-xnL"/>
+                            <constraint firstItem="g0U-6n-mOE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tAI-H6-sYa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonPush" destination="SId-j7-qmF" id="khl-Lm-89H"/>
+                        <outlet property="imageViewDiamond" destination="g0U-6n-mOE" id="qeJ-EZ-574"/>
+                        <outlet property="titleLabel" destination="Kfv-rl-TvR" id="Klb-98-iV6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="47.290640394088669"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rubyimagen" width="200" height="170"/>
+    </resources>
 </document>
